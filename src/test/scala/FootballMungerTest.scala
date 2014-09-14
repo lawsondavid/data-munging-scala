@@ -11,7 +11,7 @@ class FootballMungerTest extends FlatSpec with Matchers {
 
   "A DataMunger" should "return the team with the smallest range" in {
     val teamWithSmallestRange = new FootballMunger().readData("football.dat")
-    assert(teamWithSmallestRange === "manu")
+    assert(teamWithSmallestRange === "Leicester")
   }
 
 }
