@@ -1,8 +1,5 @@
 import org.scalatest.{FlatSpec, Matchers}
 
-/**
- * Created by dave on 08/09/14.
- */
 class FootballMungerTest extends FlatSpec with Matchers {
 
   "A FootballMunger" should "return nothing when no file" in {
@@ -13,5 +10,4 @@ class FootballMungerTest extends FlatSpec with Matchers {
     val teamWithSmallestRange = new FootballMunger().readData("football.dat")
     assert(teamWithSmallestRange === "Leicester")
   }
-
 }
